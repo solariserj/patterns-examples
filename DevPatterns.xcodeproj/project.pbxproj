@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6921DF5C2AFE28EE00A05282 /* PatternCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921DF5B2AFE28EE00A05282 /* PatternCell.swift */; };
+		6967C79E2999984300423A15 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967C79D2999984300423A15 /* Factory.swift */; };
+		69716DFA2B066BBD000AB6AC /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69716DF92B066BBD000AB6AC /* Singleton.swift */; };
+		6980141C2B06723400DB972B /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6980141B2B06723400DB972B /* Strategy.swift */; };
 		69E7AE45298ED654000E8FAC /* DevPatternsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E7AE44298ED654000E8FAC /* DevPatternsApp.swift */; };
 		69E7AE47298ED654000E8FAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E7AE46298ED654000E8FAC /* ContentView.swift */; };
 		69E7AE49298ED656000E8FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E7AE48298ED656000E8FAC /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6921DF5B2AFE28EE00A05282 /* PatternCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternCell.swift; sourceTree = "<group>"; };
+		6967C79D2999984300423A15 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		69716DF92B066BBD000AB6AC /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		6980141B2B06723400DB972B /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
 		69E7AE41298ED654000E8FAC /* DevPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E7AE44298ED654000E8FAC /* DevPatternsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevPatternsApp.swift; sourceTree = "<group>"; };
 		69E7AE46298ED654000E8FAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +52,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6967C79C2999982900423A15 /* FactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+				6967C79D2999984300423A15 /* Factory.swift */,
+			);
+			path = FactoryMethod;
+			sourceTree = "<group>";
+		};
+		69716DF82B066B9C000AB6AC /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				69716DF92B066BBD000AB6AC /* Singleton.swift */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		6980141A2B06721800DB972B /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				6980141B2B06723400DB972B /* Strategy.swift */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
 		69E7AE38298ED654000E8FAC = {
 			isa = PBXGroup;
 			children = (
@@ -65,8 +97,12 @@
 			children = (
 				69E7AE44298ED654000E8FAC /* DevPatternsApp.swift */,
 				69E7AE55298ED8C1000E8FAC /* PaternModel.swift */,
-				69E7AE46298ED654000E8FAC /* ContentView.swift */,
+				6921DF5B2AFE28EE00A05282 /* PatternCell.swift */,
 				69E7AE53298ED697000E8FAC /* ContentViewModel.swift */,
+				69E7AE46298ED654000E8FAC /* ContentView.swift */,
+				6980141A2B06721800DB972B /* Strategy */,
+				6967C79C2999982900423A15 /* FactoryMethod */,
+				69716DF82B066B9C000AB6AC /* Singleton */,
 				69E7AE5C29943698000E8FAC /* Prototype */,
 				69E7AE592992F4B1000E8FAC /* Builder */,
 				69E7AE52298ED663000E8FAC /* AbstractFactory */,
@@ -184,6 +220,10 @@
 				69E7AE6029943B1A000E8FAC /* ClientForProtoype.swift in Sources */,
 				69E7AE5E299436C2000E8FAC /* Prototype.swift in Sources */,
 				69E7AE58298ED8F8000E8FAC /* AbstractFactory.swift in Sources */,
+				6921DF5C2AFE28EE00A05282 /* PatternCell.swift in Sources */,
+				69716DFA2B066BBD000AB6AC /* Singleton.swift in Sources */,
+				6967C79E2999984300423A15 /* Factory.swift in Sources */,
+				6980141C2B06723400DB972B /* Strategy.swift in Sources */,
 				69E7AE54298ED697000E8FAC /* ContentViewModel.swift in Sources */,
 				69E7AE56298ED8C1000E8FAC /* PaternModel.swift in Sources */,
 				69E7AE5B2992F54C000E8FAC /* Builder.swift in Sources */,
@@ -315,7 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DevPatterns/Preview Content\"";
-				DEVELOPMENT_TEAM = WLL6E8QD4H;
+				DEVELOPMENT_TEAM = SMLXZY3S3R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -344,7 +384,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DevPatterns/Preview Content\"";
-				DEVELOPMENT_TEAM = WLL6E8QD4H;
+				DEVELOPMENT_TEAM = SMLXZY3S3R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -21,12 +21,9 @@ struct ContentView: View {
             Text("Patterns of SolariSerJ")
             
             List(viewModel.list, id: \.title) { element in
-                Button(element.title) {
+                PatternCellView(viewModel: .init(element)).onTapGesture {
                     viewModel.select(patern: element)
                 }
-                .frame(width: 300, height: 60)
-                .cornerRadius(20)
-                .border(.gray)
             }
         
         }

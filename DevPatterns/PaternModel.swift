@@ -11,6 +11,9 @@ enum PatternType: CaseIterable {
     case abstractFactory
     case builder
     case prototype
+    case factory
+    case singleton
+    case strategy
     
     var title: String {
         switch self {
@@ -20,7 +23,23 @@ enum PatternType: CaseIterable {
             return "Builder"
         case .prototype:
             return "Prototype"
-            
+        case .factory:
+            return "Factory"
+        case .singleton:
+            return "Singleton"
+        case .strategy:
+            return "Strategy"
+        }
+    }
+    
+    var type: String {
+        switch self {
+        case .factory:
+            return "Порождающий"
+        case .strategy :
+            return "Поведенческий"
+        default:
+            return ""
         }
     }
     

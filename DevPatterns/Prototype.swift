@@ -10,8 +10,6 @@ import Foundation
 
 class BaseClass: NSCopying {
   
-    
-    
     private var value: Int
     private var text: String
     
@@ -45,7 +43,7 @@ class BaseClass: NSCopying {
 
 
 class SubClass: BaseClass {
-    private var boolValue = true
+    var boolValue = true
     
     override func copy(with zone: NSZone? = nil) -> Any {
         guard let prototype = super.copy(with: zone) as? SubClass else {
