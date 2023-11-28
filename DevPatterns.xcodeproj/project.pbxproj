@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6921DF5C2AFE28EE00A05282 /* PatternCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921DF5B2AFE28EE00A05282 /* PatternCell.swift */; };
+		69517FC42B167B880024E122 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69517FC32B167B880024E122 /* Observer.swift */; };
 		6967C79E2999984300423A15 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967C79D2999984300423A15 /* Factory.swift */; };
 		69716DFA2B066BBD000AB6AC /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69716DF92B066BBD000AB6AC /* Singleton.swift */; };
 		6980141C2B06723400DB972B /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6980141B2B06723400DB972B /* Strategy.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		6921DF5B2AFE28EE00A05282 /* PatternCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternCell.swift; sourceTree = "<group>"; };
+		69517FC32B167B880024E122 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		6967C79D2999984300423A15 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		69716DF92B066BBD000AB6AC /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		6980141B2B06723400DB972B /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69517FC22B1678620024E122 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				69517FC32B167B880024E122 /* Observer.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
 		6967C79C2999982900423A15 /* FactoryMethod */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 				6921DF5B2AFE28EE00A05282 /* PatternCell.swift */,
 				69E7AE53298ED697000E8FAC /* ContentViewModel.swift */,
 				69E7AE46298ED654000E8FAC /* ContentView.swift */,
+				69517FC22B1678620024E122 /* Observer */,
 				6980141A2B06721800DB972B /* Strategy */,
 				6967C79C2999982900423A15 /* FactoryMethod */,
 				69716DF82B066B9C000AB6AC /* Singleton */,
@@ -215,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69517FC42B167B880024E122 /* Observer.swift in Sources */,
 				69E7AE47298ED654000E8FAC /* ContentView.swift in Sources */,
 				69E7AE45298ED654000E8FAC /* DevPatternsApp.swift in Sources */,
 				69E7AE6029943B1A000E8FAC /* ClientForProtoype.swift in Sources */,

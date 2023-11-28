@@ -31,6 +31,8 @@ class ContentViewModel: ObservableObject {
             goSingleton()
         case .strategy:
             goStrategy()     
+        case .observer:
+            goObserver()
         }
     }
     
@@ -108,6 +110,29 @@ class ContentViewModel: ObservableObject {
         filter.filterStrategy = BlackAndWhiteFilter()
         filter.applyFilter(to: image)
 
+        
+    }
+    
+    func goObserver() {
+        let vasea = User(name: "Vasea")
+        let petya = User(name: "Petya")
+        let robot = Google()
+
+        var bloger = Bloger()
+        bloger.add(observer: vasea)
+        bloger.video = "ViJU Nature"
+        
+        sleep(5)
+        
+        bloger.add(observer: robot)
+        bloger.video = "Discovery Chanal"
+        
+        sleep(5)
+        
+        bloger.remove(observer: robot)
+        bloger.add(observer: petya)
+        bloger.video = "TV 1000"
+        
         
     }
 }
